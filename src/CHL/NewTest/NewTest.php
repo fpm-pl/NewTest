@@ -16,22 +16,22 @@ use pocketmine\item\Item;
 class NewTest extends PluginBase implements Listener{
         
         public function onLoad (){
-                $this->getLogger()->info("Memuat plugin untuk uji coba!");
+                $this->getLogger()->info("Loading NewTest!");
         }
         public function onEnable(){
                 $this->getServer()->getPluginManager()->registerEvents($this,$this);
-                $this->getLogger()->info("Plugin ini dibuat untuk uji coba!");
+                $this->getLogger()->info("Plugin Enabled!");
         }
         public function onDisable(){
-                $this->getLogger()->info("Plugin tidak aktif!");
+                $this->getLogger()->info("Plugin Disabled!");
         }
         public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
-                if($cmd->getName() == "coba"){
+                if($cmd->getName() == "test"){
                     if(!$sender instanceof Player){
-                        $sender->sendMessage("Tolong gunakan perintah ini di dalam game!");
+                        $sender->sendMessage("Try it in-game please!");
                     }else{
                         $sender->getInventory()->addItem(Item::get(364,0,8));
-                        $sender->sendMessage("Kamu mendapatkan 8 steak!");
+                        $sender->sendMessage("You get 8 steak!");
                     }
                     return true;
                 }
