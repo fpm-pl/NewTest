@@ -1,12 +1,12 @@
 name: NewTest
 main: CHL\NewTest\NewTest
-api: 3.19.2
-version: 0.0.2
-author: XnoxyCHL
+api: 4.0.0
+version: 0.0.3
+author: FRashkar-pm
 commands:
-        coba:
-            description: Percobaan
-            usage: /coba
+        test:
+            description: Tester
+            usage: /test
 permissions:
-        coba.command:
+        test.command:
             default: true
