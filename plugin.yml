@@ -3,10 +3,3 @@ main: CHL\NewTest\NewTest
 api: 4.0.0
 version: 0.0.3
 author: FRashkar-pm
-commands:
-        test:
-            description: Tester
-            usage: /test
-permissions:
-        test.command:
-            default: true
