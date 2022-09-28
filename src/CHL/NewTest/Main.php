@@ -5,7 +5,7 @@ namespace CHL\NewTest;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
-use CHL\NewTest\Commands;
+use CHL\NewTest\Commands\TestCommand;
 
 class Main extends PluginBase
 {
