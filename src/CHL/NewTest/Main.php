@@ -2,18 +2,16 @@
 
 namespace CHL\NewTest;
 
-use pocketmine\event\Listener;
+use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\plugin\PluginBase;
+use pocketmine\utils\TextFormat;
+use CHL\NewTest\Commands;
 
-class Main extends PluginBase implements Listener;{
-  
-    public function onEnable(){
-      
-      $this->getLogger()->info("NewTest Enabled!");
-      
-      $this->getServer()->getCommandMap()->registerAll("AllCommands", [
-          new Commands\Test(name: "test", description: "Just For Test", usageMessage: "test", aliases: ["tst"])
-        ]);
-      
+class Main extends PluginBase
+{
+    public function onEnable(): void
+    {
+       $this->getServer()->getCommandMap()->register("test", new TestCommand());
+       $this->getLogger()->info("Plugin Enabled!");
     }
-}          
+}
