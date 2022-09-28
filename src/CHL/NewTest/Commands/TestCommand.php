@@ -19,10 +19,11 @@ class TestCommand extends Command
     {
         if($sender instanceof Player) {
             if($sender->hasPermission("test.command")) {
-                if($sender->getInventory()->addItem(Item::get(364,0,8));
+                    $sender->getInventory()->addItem(Item::get(364,0,8);
                     $sender->sendMessage(TextFormat::RED . "Your get 8 steak!");
         } else {
             $sender->sendMessage(TextFormat::RED . "Please use this command in-game");
+            }
         }
     }
-}
+ }
