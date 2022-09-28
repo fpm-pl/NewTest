@@ -1,5 +1,5 @@
 name: NewTest
-main: CHL\NewTest\NewTest
+main: CHL\NewTest\Main
 api: 4.0.0
 version: 0.0.3
 author: FRashkar-pm
