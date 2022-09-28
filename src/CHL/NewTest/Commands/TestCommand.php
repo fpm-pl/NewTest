@@ -6,6 +6,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 use pocketmine\player\Player;
 use pocketmine\utils\TextFormat;
+use pocketmine\item\Item;
 
 class TestCommand extends Command
 {
