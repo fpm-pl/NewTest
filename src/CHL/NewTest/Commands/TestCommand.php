@@ -7,6 +7,7 @@ use pocketmine\command\Command;
 use pocketmine\player\Player;
 use pocketmine\utils\TextFormat;
 use pocketmine\item\Item;
+use pocketmine\item\VanillaItems;
 
 class TestCommand extends Command
 {
