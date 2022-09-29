@@ -26,6 +26,10 @@ class TestCommand extends Command
         } else {
             $sender->sendMessage(TextFormat::RED . "Please use this command in-game");
             }
+          else {
+              $sender->getInventory()->addItem(VanillaItems::STEAK()->setCount(8));
+                    $sender->sendMessage(TextFormat::GREEN . "You get 8 steak!");
+          }
         }
     }
  }
